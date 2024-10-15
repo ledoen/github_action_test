@@ -18,5 +18,11 @@ jobs:
         run: make
       - name: test
         run: ./test
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with: 
+          token: ${{secrets.GITHUB_TOKEN}}
+          tag_name: prebuild_driver
+          files: test
       - name: clean
         run: make clean
