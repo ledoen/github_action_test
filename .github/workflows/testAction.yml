@@ -21,7 +21,7 @@ jobs:
       - name: Release
         uses: softprops/action-gh-release@master
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.OPENWRT_TOKEN }}
         with: 
           tag_name: prebuild_driver
           body: test demo
