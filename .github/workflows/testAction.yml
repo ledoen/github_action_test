@@ -1,0 +1,17 @@
+/name: C/C++ CI
+
+on:
+  repository_dispatch:
+  workflow_dispatch:
+
+jobs:
+ build-and-test:
+   runs-on: ubuntu-20.04
+   steps:
+   - uses: actions/checkout@v2
+   - name: configure
+   run: ./configure
+   - name: make
+   run: make
+   - name: test
+   run: ./test
