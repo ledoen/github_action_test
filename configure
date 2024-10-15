@@ -1,0 +1,4 @@
+CXX=gcc     # the c compiler
+CXXFLAGS=-g
+NATIVE=on
+TUNE=generic
