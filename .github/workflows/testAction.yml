@@ -15,5 +15,5 @@ jobs:
    run: make
    - name: test
    run: ./test
-   - name: clean
+   - name: clean_all
    run: make clean
