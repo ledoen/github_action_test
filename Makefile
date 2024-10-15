@@ -1,5 +1,5 @@
-/all:
+all:
 	gcc test.c -o test
 
-clean:/
+clean:
 	$(RM) test
