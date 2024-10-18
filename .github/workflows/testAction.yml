@@ -3,10 +3,16 @@ run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on:
   repository_dispatch:
   workflow_dispatch:
+env:
+  test-user: joey
+  test-time: 2024-10-18
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
+      - run: |
+          echo $test-user
+          echo $test-time 
       - name: Check out repository code
         uses: actions/checkout@v4
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
