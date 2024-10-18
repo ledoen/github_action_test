@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 env:
   test_user: joey
-  test_time: 2024-10-18
+  test_time: 2024.10.18
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
