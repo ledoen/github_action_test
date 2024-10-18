@@ -4,15 +4,15 @@ on:
   repository_dispatch:
   workflow_dispatch:
 env:
-  test-user: joey
-  test-time: 2024-10-18
+  test_user: joey
+  test_time: 2024-10-18
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          echo $test-user
-          echo $test-time 
+          echo $test_user
+          echo $test_time 
       - name: Check out repository code
         uses: actions/checkout@v4
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
